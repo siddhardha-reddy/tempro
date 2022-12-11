@@ -31,7 +31,7 @@ def checked(m,f):
     return s[0]
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 @app.route('/check',methods=['post'])
 def check():
     l=request.form['name1']
